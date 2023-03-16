@@ -17,62 +17,106 @@
 }
 
 .cadastro {
-	display: ;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-    width: 500px;
-    background: rgb(156, 131, 255);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-	height: 100vh;
-    padding: 50px;
+    width: 40%;
+    min-width: 482px;
+    background: #102766;
+	min-height: 1117px;
+    padding: 70px 275px;
 }
 
 form {
-/* background-image: url("../img/Rectangle_33.png"); background-position: center; background-size: cover; background-repeat: no-repeat; */
+    all: unset;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
     width: 40%;
-    height: 568px;
-    background: rgb(83, 60, 214);
+    min-width:343px;
+    min-height: 568px;
+    background: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 28.5px 50px;
+    gap: 50px;
+    border-radius: 12px;
 }
 
-/* p {
-    width: 141px;
-    height: 24px;
-    left: 170px;
-    top: 321px;
-    font-family: 'Poppins';
-    font-style: normal;
+
+.taskCreator input, .taskCreator select, .taskCreator textarea{
+    all: unset;
+    font-size: 17px;
+    font-weight: 500;
+    color: #545454;
+    border-bottom: 1px solid #450B53;
+    line-height: 22.5px;
+}
+
+::placeholder{
+    font-size: 17px;
+    font-weight: 500;
+    color: #545454;
+    line-height: 22.5px;
+}
+
+
+.formTitle{
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-} */
+    font-size: 26px;
+    color: #343434;
+    line-height: 22.5px;
+    margin-bottom: 34px;
+}
+
+.formButton{
+    background-color: #E84118;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: #FFFFFF;
+    min-width: 287px;
+    min-height: 52px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+}
 
 
 .lista {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 	flex-direction: column;
     width: 60%;
-    height: 110px;
-    left: 529px;
-    top: 129px;
-    background: #FFFFFF;
-    border: 1px solid #450B53;
-    box-shadow: 0px 2px 4px rgba(244, 20, 184, 0.25);
-    border-radius: 12px;
+    min-width: 1246px;
+    min-height: 1117px;
+    background-color: #FFFFFF;
+    padding: 47px 70px;
+    gap: 28px;
     
 }
 
+.listTitle{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    color: #343434;
+    margin-bottom: 22px;
+}
+
+
+
+
+
 .lista ul {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction:column;
@@ -80,14 +124,4 @@ form {
     padding: 24px;
 }
 
-h1 {
-position: absolute;
-    width: 188px;
-    height: 36px;
-    left: 500px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
 
-}
