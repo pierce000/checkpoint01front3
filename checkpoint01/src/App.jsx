@@ -78,32 +78,34 @@ function App() {
   return (
     <div className="app">
       <div className="cadastro">
-        <form onSubmit={id ? editItem : addItem}>
-          <p>Cadastrar tarefa</p>
-          <input value={tarefa} onChange={(event) => setTarefa(event.target.value)} placeholder='Titulo' />
-          <select value={categoria} onChange={(event) => setCategoria(event.target.value)} >
+        <form className="taskCreator" onSubmit={id ? editItem : addItem}>
+          <p className="formTitle">Cadastrar tarefa</p>
+          <input className="inputTaskName" value={tarefa} onChange={(event) => setTarefa(event.target.value)} placeholder='Titulo' />
+          <select className="inputTaskCategory" value={categoria} onChange={(event) => setCategoria(event.target.value)} >
             <option value="">Categorias</option>
             <option value="trabalho">Trabalho</option>
             <option value="lazer">Lazer</option>
             <option value="prioridade">Prioridade</option>
             <option value="outros">Outros</option>
           </select>
-          <input type="date" value={data} placeholder='Data' onChange={(event) => setData(event.target.value)} />
-          <textarea cols="25" rows="2" placeholder='Descrição' value={descricao} onChange={(event) => setDescricao(event.target.value)}> </textarea>
+          <input className="inputTaskDate" type="date" value={data} placeholder='Data' onChange={(event) => setData(event.target.value)} />
+          <textarea className="inputTaskDescription"  cols="25" rows="2" placeholder='Descrição' value={descricao} onChange={(event) => setDescricao(event.target.value)}> </textarea>
 
-          <input type="submit" value={id ? "salvar" : "cadastrar"} />
+          <input className="formButton" type="submit" value={id ? "salvar" : "cadastrar"} />
         </form>
       </div>
 
       <div className="lista">
-        <h1>Minhas Tarefas</h1>
+        <h1 className="listTitle">Minhas Tarefas</h1>
         <ul>
           {listaTarefa.map((item) =>
-            <>
+            <div className="listCard">
               <Card key={item.id} item={item}></Card>
+              <div className="taskListButtons">
               <button  onClick={() => preencheEstados(item)}>Editar</button>
               <button onClick={() => apagarItem(item.id)}>Apagar</button>
-            </>)}
+              </div>
+            </div>)}
 
         </ul>
       </div>

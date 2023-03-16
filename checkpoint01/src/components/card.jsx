@@ -3,10 +3,10 @@
 function Card(props) {
     return (
         <li >
-            <p>{props.item.tarefa}</p>
-            <p>{props.item.data}</p>
-            <p>{props.item.categoria}</p>
-            <p>{props.item.descricao}</p>
+            <p className="taskName">{props.item.tarefa}</p>
+            <p className="taskDate">{props.item.data}</p>
+            <p className="taskCategory">{props.item.categoria}</p>
+            <p className="taskDescription">{props.item.descricao}</p>
         </li >
     )
 }
