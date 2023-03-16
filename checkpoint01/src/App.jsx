@@ -102,8 +102,8 @@ function App() {
             <div className="listCard">
               <Card key={item.id} item={item}></Card>
               <div className="taskListButtons">
-              <button  onClick={() => preencheEstados(item)}>Editar</button>
-              <button onClick={() => apagarItem(item.id)}>Apagar</button>
+              <img src="../img/editIcon.png" onClick={() => preencheEstados(item)}></img>
+              <img src="../img/trashIcon.png" onClick={() => apagarItem(item.id)}></img>
               </div>
             </div>)}
 
