@@ -91,7 +91,7 @@ function App() {
           <input className="inputTaskDate" type="date" value={data} placeholder='Data' onChange={(event) => setData(event.target.value)} />
           <textarea className="inputTaskDescription"  cols="25" rows="2" placeholder='Descrição' value={descricao} onChange={(event) => setDescricao(event.target.value)}> </textarea>
 
-          <input className="formButton" type="submit" value={id ? "salvar" : "cadastrar"} />
+          {id ? <button className="formButton" type="submit" >Salvar</button> : <button className="formButton" type="submit" >Cadastrar</button>}
         </form>
       </div>
 

@@ -22,7 +22,7 @@
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
     width: 40%;
-    min-width: 482px;
+    height: 100vh;
     background: #102766;
 	min-height: 1117px;
     padding: 70px 275px;
@@ -53,6 +53,7 @@ form {
     color: #545454;
     border-bottom: 1px solid #450B53;
     line-height: 22.5px;
+    width: 90%;
 }
 
 ::placeholder{
@@ -73,17 +74,18 @@ form {
 
 .formButton{
     background-color: #E84118;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 22.5px;
-    color: #FFFFFF;
+    color: #ffffff;
     min-width: 287px;
     min-height: 52px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 72px;
+    cursor: pointer;
+    
 }
 
 
@@ -93,8 +95,7 @@ form {
     align-items: flex-start;
 	flex-direction: column;
     width: 60%;
-    min-width: 1246px;
-    min-height: 1117px;
+    min-height: 100vh;
     background-color: #FFFFFF;
     padding: 47px 70px;
     gap: 28px;
@@ -110,9 +111,6 @@ form {
     color: #343434;
     margin-bottom: 22px;
 }
-
-
-
 
 
 .lista ul {
