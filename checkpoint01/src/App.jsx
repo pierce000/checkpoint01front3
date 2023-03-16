@@ -76,10 +76,10 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="input">
+    <div className="app">
+      <div className="cadastro">
         <form onSubmit={id ? editItem : addItem}>
-          <h1>Cadastrar tarefa</h1>
+          <p>Cadastrar tarefa</p>
           <input value={tarefa} onChange={(event) => setTarefa(event.target.value)} placeholder='Titulo' />
           <select value={categoria} onChange={(event) => setCategoria(event.target.value)} >
             <option value="">Categorias</option>
@@ -101,7 +101,7 @@ function App() {
           {listaTarefa.map((item) =>
             <>
               <Card key={item.id} item={item}></Card>
-              <button onClick={() => preencheEstados(item)}>Editar</button>
+              <button  onClick={() => preencheEstados(item)}>Editar</button>
               <button onClick={() => apagarItem(item.id)}>Apagar</button>
             </>)}
 

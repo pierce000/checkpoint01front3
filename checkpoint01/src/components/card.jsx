@@ -3,9 +3,9 @@
 function Card(props) {
     return (
         <li >
-            <h2>{props.item.tarefa}</h2>
-            <h2>{props.item.data}</h2>
-            <h5>{props.item.categoria}</h5>
+            <p>{props.item.tarefa}</p>
+            <p>{props.item.data}</p>
+            <p>{props.item.categoria}</p>
             <p>{props.item.descricao}</p>
         </li >
     )
